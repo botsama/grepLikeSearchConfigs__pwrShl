@@ -11,6 +11,10 @@ $wherePattern02 = "grepYouwant-02"
 $wherePattern03 = "servernamePlzu"
 $wherePattern04 = "Microsoft"
 
+# Show debug mode for list of parameters available from Get-ChildItem ( or any other cmdLet)
+# Uncomment belowLine to output TypeName: System.IO.FileInfo for relevant params and properties
+# $buildSearchStr = Get-ChildItem $searchPath -Recurse -Force | Get-Member
+
 # Get-Unique added to remove duplicate file name paths with pattern matches.
 
 $bGetQual01 = $buildSearchStr | Select-String "$wherePattern01"
