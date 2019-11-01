@@ -2,7 +2,7 @@
 # testing to see if quicker than running a findstr on cmd line.
 
 $boxName = $env:COMPUTERNAME
-$searchPath = 'C:\temp\*'
+$searchPath = 'C:\users'
 # below includes specify all the file extensions on drive that will be searched.
 $buildSearchStr = Get-ChildItem $searchPath -Recurse -Force -Include *.ps1, *.txt, *.bat, *.ini, *.xml, *.properties -ErrorAction SilentlyContinue
 # Edit below for search strings.  Comment out if you are searching for less strings to match.
